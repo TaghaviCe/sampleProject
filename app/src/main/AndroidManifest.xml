@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SampleProject">
         <activity
+            android:name=".DoctorActivity"
+            android:exported="false" />
+        <activity
             android:name=".UserCheck"
             android:exported="false" />
         <activity
