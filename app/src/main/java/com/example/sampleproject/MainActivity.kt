@@ -25,8 +25,8 @@ class MainActivity : AppCompatActivity() {
         binding.textViewname.text = viewModelDr.doctorList[0].name.toString()
         binding.textViewstatus.text = viewModelDr.doctorList[0].Type.toString()
         var doctor = Hospital.conf[0]
-        binding.text10.text = " مشاوره تلفنی " + doctor.time + " دقیقه ای "
-        binding.textViewprice.text = doctor.price.toString() + " تومان "
+        binding.text10.text = " مشاوره تلفنی " + viewModelDr.consultancyList[0].time + " دقیقه ای "
+        binding.textViewprice.text = viewModelDr.consultancyList[0].price.toString() + " تومان "
         binding.confere.setOnClickListener {
             Toast.makeText(this, "cunsultancy is chosen", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, ConsultActivity::class.java)
